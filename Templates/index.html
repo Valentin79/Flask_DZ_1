@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <nav class="navigation">
+            <h2 class="header">Самый лучший магазин</h2>
+
+            <div class="nav_link">
+                <a href="http://127.0.0.1:5000">Главная</a>
+                <a href="http://127.0.0.1:5000/clothes/">Одежда</a>
+                <a href="http://127.0.0.1:5000/shoes/">Обувь</a>
+            </div>
+        </nav>
+
+    </div>
+    <div class="content">
+        {% block content %}
+        <h1 class="header">Главная</h1>
+        <div class="main__menu">
+            <div class="menu__item">
+                <h3>Одежда</h3>
+                <a href="http://127.0.0.1:5000/clothes/">Здесь изображение одежды</a>
+            </div>
+            <div class="menu__item">
+                <h3>Обувь</h3>
+                <a href="http://127.0.0.1:5000/shoes/">Здесь изображение обуви</a>
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+    <footer>
+        <p>Все права защищены</p>
+    </footer>
+</body>
+
+</html>
